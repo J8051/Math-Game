@@ -20,4 +20,3 @@ class Player
   end     
 end
 
-
