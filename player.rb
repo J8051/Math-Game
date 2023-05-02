@@ -8,12 +8,6 @@ class Player
     @name = name
   end
 
-  # def decrementHealth
-  #   if response != answer
-  #    self.health -=1
-  #   end 
-  # end
-
   def answerQuestion(question)
       puts "#{self.name}: What does #{question.number_one} #{question.operator} #{question.number_two} equal?"
       response = gets.chomp.to_i
@@ -21,7 +15,6 @@ class Player
       puts "#{self.name}:Yes you are correct"
     else
       self.health -=1
-      # self.decrementHealth 
       puts "#{self.name}:Seriously? NO!"
     end  
   end     
